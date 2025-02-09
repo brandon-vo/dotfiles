@@ -1,0 +1,28 @@
+[user]
+	name = Brandon Vo
+	email = brandonwvo@gmail.com
+
+[core]
+	editor = vim
+
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	am = commit --amend
+	st = status
+	df = diff
+	aa = add -all
+	ap = add -p
+	unstage = reset HEAD~1
+	last = log -n 1 HEAD~1
+	lg = log --oneline
+	reset-author = commit --amend --reset-author --no-edit
+	sync = "!git fetch --all && git pull --rebase origin $(git current)"
+
+	sl = stash list
+	sa = stash apply
+	sp = stash pop
+	ss = stash push -m
+	sd = stash drop
+	sh = stash show -p

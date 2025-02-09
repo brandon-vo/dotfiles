@@ -1,0 +1,84 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrapColumn": 120,
+  "prettier.printWidth": 120,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.renderWhitespace": "trailing",
+  "files.trimTrailingWhitespace": true,
+  "editor.fontLigatures": false,
+  "[r]": {
+    "editor.defaultFormatter": "REditorSupport.r"
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "go.testEnvVars": {
+    "GINKGO_EDITOR_INTEGRATION": "true"
+  },
+  "go.testOnSave": true,
+  "go.coverOnSave": true,
+  "go.coverageDecorator": {
+    "type": "gutter",
+    "coveredGutterStyle": "verticalgreen",
+    "uncoveredGutterStyle": "verticalred"
+  },
+  "[go]": {
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go"
+  },
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "node_modules/": true
+  },
+  "terminal.integrated.scrollback": 1000000,
+  "debug.autoExpandLazyVariables": "on",
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "editor.tabSize": 2,
+  "go.toolsManagement.autoUpdate": true,
+  "go.lintTool": "revive",
+  "workbench.colorTheme": "Ace Palenight",
+  "git.openRepositoryInParentFolders": "never",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.startupEditor": "none",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "go.addTags": {
+    "tags": "json",
+    "options": "json=omitempty",
+    "promptForTags": false,
+    "transform": "camelcase",
+    "template": ""
+  },
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu"]
+    }
+  }
+}
