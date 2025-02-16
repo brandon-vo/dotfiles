@@ -29,11 +29,6 @@
     "when": "editorTextFocus && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
   },
   {
-    "key": "ctrl+-",
-    "command": "workbench.action.navigateBack",
-    "when": "canNavigateBack"
-  },
-  {
     "key": "alt+left",
     "command": "-workbench.action.navigateBack",
     "when": "canNavigateBack"
@@ -47,11 +42,6 @@
     "key": "ctrl+]",
     "command": "-markdown.extension.onIndentLines",
     "when": "editorTextFocus && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
-  },
-  {
-    "key": "ctrl+=",
-    "command": "workbench.action.navigateForward",
-    "when": "canNavigateForward"
   },
   {
     "key": "alt+right",
@@ -162,6 +152,26 @@
     "command": "-workbench.action.editor.previousChange",
     "when": "editorTextFocus && !textCompareEditorActive"
   },
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+    "when": "inQuickOpen && inViewsPicker"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quickOpenView"
+  },
+  // Navigate back and forward
+  {
+    "key": "ctrl+-",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
   // Toggle between terminal and editor focus
   {
     "key": "ctrl+`",
@@ -199,5 +209,11 @@
     "key": "ctrl+]",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
+  },
+  // Go to parent fold in HTML
+  {
+    "key": "alt+x",
+    "command": "editor.gotoParentFold",
+    "when": "editorFocus"
   }
 ]

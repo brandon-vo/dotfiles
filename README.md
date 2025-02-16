@@ -6,27 +6,39 @@ brandon's dotfile setup for personal use
 
 ### Setup
 
-Run the setup script: `chmod +x setup.sh && ./setup.sh`
-<br/>
+0. clone this repo into `~/`
+```
+cd ~ && git clone git@github.com:brandon-vo/dotfiles.git
+```
 
-Or set up manually...
-<br/>
+Run the setup script:
+```
+chmod +x setup.sh && ./setup.sh
+```
 
-0. clone the repo into `~/`
+Or set it up manually...
 
-1. install oh-my-zsh<br/>`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+1. install oh-my-zsh
+   ```
+   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   ```
 
-2. install zsh-autosuggestions<br/>`git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+3. install zsh-autosuggestions
+   ```
+   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+   ```
 
-3. run symbolic link commands
-   <br/>
-   `ln -sf ~/dotfiles/.zshrc ~/.zshrc`
-   <br/>
-   `ln -sf ~/dotfiles/.gitconfig ~/.gitconfig`
-   <br/>
-   `ln -s ~/dotfiles/aliases.zsh $ZSH_CUSTOM/aliases.zsh`
-   <br/>
-   `ln -s ~/dotfiles/gozilla-modified.zsh-theme $ZSH_CUSTOM/themes/gozilla-modified.zsh-theme`
-   <br/>
+4. install nvm
+   ```
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+   ```
 
-.prettier, .vscode, and .husky are for manual project setups
+5. run symbolic link commands
+   ```
+   ln -sf ~/dotfiles/.zshrc ~/.zshrc
+   ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+   ln -s ~/dotfiles/aliases.zsh $ZSH_CUSTOM/aliases.zsh
+   ln -s ~/dotfiles/gozilla-modified.zsh-theme $ZSH_CUSTOM/themes/gozilla-modified.zsh-theme
+   ```
+
+.prettier, .vscode, and .husky are for manual setups
