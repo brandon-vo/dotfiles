@@ -1,4 +1,3 @@
-.
 #!/bin/bash
 
 # Install Oh My Zsh

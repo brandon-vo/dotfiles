@@ -24,6 +24,7 @@
 	lga = "log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
   others = "ls-files --others --ignored --exclude-from=.gitignore"
 	wip = "!f() { git add --all && git commit -m 'Work in progress'; }; f"
+	sync = "!f() { branch=${1:-main}; diff_output=$(git diff --quiet; echo $?); if [ $diff_output -eq 1 ]; then git stash push; fi; git checkout $branch && git fetch --all && git pull origin $branch && git checkout - && git rebase $branch; if [ $diff_output -eq 1 ]; then git stash pop; fi; }; f"
 	rebase-same-date = rebase -i --committer-date-is-author-date
 	remote-restore = reset --hard origin/main
 	hard-clean = "!f() { git reset --hard && git clean -fd; }; f"

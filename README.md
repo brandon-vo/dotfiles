@@ -13,7 +13,7 @@ cd ~ && git clone git@github.com:brandon-vo/dotfiles.git
 
 Run the setup script:
 ```
-chmod +x setup.sh && ./setup.sh
+chmod +x setup.sh && bash ./setup.sh
 ```
 
 Or set it up manually...
@@ -37,8 +37,8 @@ Or set it up manually...
    ```
    ln -sf ~/dotfiles/.zshrc ~/.zshrc
    ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
-   ln -s ~/dotfiles/aliases.zsh $ZSH_CUSTOM/aliases.zsh
-   ln -s ~/dotfiles/gozilla-modified.zsh-theme $ZSH_CUSTOM/themes/gozilla-modified.zsh-theme
+   ln -sf ~/dotfiles/aliases.zsh $ZSH_CUSTOM/aliases.zsh
+   ln -sf ~/dotfiles/gozilla-modified.zsh-theme $ZSH_CUSTOM/themes/gozilla-modified.zsh-theme
    ```
 
 .prettier, .vscode, and .husky are for manual setups
