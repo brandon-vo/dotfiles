@@ -1,7 +1,7 @@
 alias aliases="vim ~/dotfiles/aliases.zsh"
 
 # Git
-alias pull="git pull"
+alias pull="git pull --rebase"
 alias push="git push"
 alias pushf="git push --force-with-lease"
 
