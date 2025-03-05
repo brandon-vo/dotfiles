@@ -2,8 +2,8 @@ alias aliases="vim ~/dotfiles/aliases.zsh"
 
 # Git
 alias pull="git pull --rebase"
-alias push="git push"
-alias pushf="git push --force-with-lease"
+alias push="git push origin head"
+alias pushf="git push origin head --force-with-lease"
 
 # npm
 alias start="npm start"
